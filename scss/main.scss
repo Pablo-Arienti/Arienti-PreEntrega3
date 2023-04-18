@@ -1,0 +1,43 @@
+@import "_footer";
+@import "_section";
+@import "_header";
+@import "_main";
+@import "media";
+@import "keyframe";
+@import "_colores_fuentes";
+@import "_mixing";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+	transform: translateX(-50%) translateY(-50%);
+}
+body {
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: "header"
+    "main"
+    "footer";
+}
+@font-face {
+	font-family: SofiaBold;
+	src: url("../asset/font/SofiaSansCondensed-BoldItalic.ttf");
+	font-family: SofiaRegular;
+	src: url("../asset/font/SofiaSansCondensed-Regular.ttf");
+}
+@import "_colores_fuentes";
+@import "_footer";
+@import "_main";
+@import "ketframe";
+@import "_header";

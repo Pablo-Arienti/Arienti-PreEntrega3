@@ -1,0 +1,29 @@
+$color_1: #fffcf2;
+$color_2: rgb(205, 196, 185);
+$color_3: #d55f5f;
+$color_4: rgb(250, 235, 215);
+$color_5: rgb(228, 214, 196);
+$color_6: #4bd813;
+$color_7: #fab915;
+$font-family_1: SofiaRegular;
+$font-family_2: 'Alegreya SC', serif;
+$font-family_3: "Dancing Script", cursive;
+$font-family_4: cursive;
+$font-family_5: SofiaBold;
+$background-color_1: #252422;
+$background-color_2: #380688;
+$background-color_3: #1c1c1c;
+$background-color_4: #289906;
+$background-color_5: #4bd813;
+$background-color_6: #403d39;
+$background-color_7: transparent;
+$background-color_8: #2c7c0c;
+
+@font-face {
+	font-family: SofiaBold;
+	src: url("../asset/font/SofiaSansCondensed-BoldItalic.ttf");
+}
+@font-face {
+	font-family: SofiaRegular;
+	src: url("../asset/font/SofiaSansCondensed-Regular.ttf");
+}

@@ -1,0 +1,71 @@
+header {
+	background-color: $background-color_1;
+	position: sticky;
+	top: 0;
+	grid-area: header;
+	z-index: 2;
+	nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		div {
+			.estiloLogo {
+				width: 210px;
+			}
+		}
+		.botonera {
+			.navLabel {
+				display: none;
+				.navImg {
+					width: 39px;
+				}
+			}
+			.navInput {
+				display: none;
+			}
+			.navMenu {
+				li {
+					list-style: none;
+					background-color: $background-color_2;
+					display: inline-flex;
+					font-size: 1.3rem;
+					font-weight: 500;
+					padding: 13px;
+					margin: 5px;
+					font-family: $font-family_1;
+					border-radius: 0.5rem;
+				}
+			}
+			a {
+				&:link {
+					text-decoration: none;
+					color: $color_1;
+					font-size: 1.3rem;
+					font-weight: 500;
+				}
+			}
+		}
+		a {
+			&:visited {
+				text-decoration: none;
+				color: $color_1;
+				font-size: 1.3rem;
+				font-weight: 500;
+			}
+			&:active {
+				text-decoration: none;
+				color: $color_1;
+				font-size: 1.3rem;
+				font-weight: 500;
+			}
+		}
+		.boton {
+			&:hover {
+				transform: scale(1.1);
+				transition: 0.3s;
+			}
+		}
+	}
+}

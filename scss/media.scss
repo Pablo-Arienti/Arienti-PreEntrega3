@@ -1,0 +1,289 @@
+@include mobile {
+	header {
+		nav {
+			div {
+				.estiloLogo {
+					width: 120px;
+				}
+			}
+			.botonera {
+				.navLabel {
+					display: block;
+					cursor: pointer;
+				}
+				.navInput {
+					&:checked {
+						+ {
+							.navMenu {
+								clip-path: circle(100% at center);
+							}
+						}
+					}
+				}
+				.navMenu {
+					position: fixed;
+					top: 60px;
+					bottom: 0;
+					background-color: $background-color_1;
+					width: 100%;
+					left: 0;
+					display: flex;
+					justify-content: space-evenly;
+					flex-direction: column;
+					align-items: center;
+					clip-path: circle(0 at center);
+					transition: clip-path 1s ease-in-out;
+					li {
+						padding: 13px 14px;
+					}
+				}
+				a {
+					&:link {
+						font-size: 1.1rem;
+					}
+				}
+			}
+			a {
+				&:visited {
+					font-size: 1.1rem;
+				}
+				&:active {
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+	main {
+		#slider {
+			.sliderframe {
+				width: 90%;
+			}
+		}
+		.contenedor2 {
+			.img1 {
+				width: 50%;
+				padding: 2px;
+				border: none;
+			}
+			.img2 {
+				width: 50%;
+				padding: 2px;
+				border: none;
+			}
+			.img3 {
+				width: 100%;
+				padding: 2px;
+				border: none;
+			}
+		}
+		#sectionDos {
+			margin: 10px;
+		}
+		#sectionEspec {
+			article {
+				.contenedorHamburguesa {
+					flex-direction: column;
+					flex-wrap: wrap;
+					.video1 {
+						width: 100%;
+						video {
+							width: 100%;
+							height: 200px;
+						}
+					}
+					.descriptionHamb {
+						width: 100%;
+						margin: 0px;
+						p {
+							width: 100%;
+							font-size: 1.5rem;
+							margin-left: 0px;
+						}
+					}
+				}
+			}
+		}
+		#sectionCerv {
+			article {
+				.subtitulo2 {
+					width: 100%;
+					flex-direction: column;
+				}
+				.contenedorCerveza {
+					flex-direction: column;
+					flex-wrap: wrap;
+					justify-items: center;
+					.descriptionCerveza {
+						width: 100%;
+						margin: 0px;
+						p {
+							width: 100%;
+							font-size: 1.5rem;
+							margin-left: 0px;
+							margin-right: 20px;
+						}
+					}
+					div {
+						width: 100%;
+						iframe {
+							width: 300px;
+							height: 200px;
+							margin-right: 0px;
+						}
+					}
+				}
+			}
+		}
+		#promociones {
+			article {
+				.contenedorPromo {
+					.contenedorHappy {
+						flex-direction: column;
+						.imagenHappy {
+							width: 100%;
+						}
+						.descriptionHappy {
+							text-align: center;
+							width: 100%;
+							.textTitulo {
+								font-size: 1.5rem;
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include tablet {
+	main {
+		#slider {
+			.sliderframe {
+				width: 95%;
+			}
+		}
+		#sectionDos {
+			margin: 10px;
+		}
+		#sectionEspec {
+			article {
+				.contenedorHamburguesa {
+					flex-direction: column;
+					.video1 {
+						width: 100%;
+						video {
+							width: 100%;
+						}
+					}
+					.descriptionHamb {
+						width: 100%;
+						margin: 15px;
+						padding: 15px;
+						p {
+							width: 100%;
+							margin-left: 0px;
+						}
+					}
+				}
+			}
+		}
+		#sectionCerv {
+			article {
+				.contenedorCerveza {
+					flex-direction: column;
+					padding: 0px;
+					.descriptionCerveza {
+						width: 100%;
+						margin: 0px;
+						p {
+							width: 100%;
+							font-size: 1.7rem;
+							margin-left: 0px;
+						}
+					}
+					div {
+						width: 100%;
+						iframe {
+							width: 100%;
+							margin-right: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.menu-container {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		align-items: center;
+		div {
+			padding: 20px;
+			margin-left: 26%;
+		}
+	}
+}
+@include mobile320 {
+	main {
+		#sectionUno {
+			height: 525px;
+		}
+		#sectionDos {
+			height: 525px;
+		}
+	}
+	footer {
+		.grupoFoot {
+			.botoneraFoot {
+				.ico {
+					width: 30px;
+					margin: 0px 20px;
+				}
+			}
+		}
+	}
+}
+@include  portatil {
+	main {
+		#sectionEspec {
+			article {
+				.contenedorHamburguesa {
+					.video1 {
+						video {
+							width: 100%;
+							height: auto;
+						}
+					}
+					.descriptionHamb {
+						p {
+							width: 100%;
+							font-size: 1.5rem;
+							margin-left: 0px;
+						}
+					}
+				}
+			}
+		}
+		#sectionCerv {
+			article {
+				.contenedorCerveza {
+					.descriptionCerveza {
+						p {
+							width: 100%;
+							font-size: 1.5rem;
+							margin-left: 0px;
+						}
+					}
+					div {
+						iframe {
+							width: 100%;
+							height: 300px;
+							margin-right: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
